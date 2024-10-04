@@ -1,7 +1,7 @@
 ems-flasher
 ===========
 
-[![Build Status](https://travis-ci.org/gheja/ems-flasher.png?branch=master)](https://travis-ci.org/gheja/ems-flasher)
+[![Build Status](https://github.com/gheja/ems-flasher/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/gheja/ems-flasher/actions/workflows/c-cpp.yml)
 
 EMS flasher for the _GB USB smart card 64M_, a flash cartridge for GameBoy.
 
