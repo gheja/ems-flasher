@@ -1,5 +1,4 @@
-ems-flasher
-===========
+# ems-flasher
 
 [![Build Status](https://github.com/gheja/ems-flasher/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/gheja/ems-flasher/actions/workflows/c-cpp.yml)
 
@@ -9,9 +8,26 @@ The hardware can be obtained from: http://store.kitsch-bent.com/product/usb-64m-
 
 Forked from: http://lacklustre.net/gb/ems/
 
+For more info check out the Original about section.
 
-Original about
---------------
+## Installing
+
+Launchpad PPA: https://launchpad.net/~gheja/+archive/ubuntu/ems-flasher
+
+Currently building for:
+  - Ubuntu 18.04 LTS (Bionic Beaver)
+  - Ubuntu 20.04 LTS (Focal Fossa)
+  - Ubuntu 22.04 LTS (Jammy Jellyfish)
+  - Ubuntu 24.04 LTS (Noble Numbat)
+
+Install on Ubuntu using PPA:
+```
+sudo add-apt-repository ppa:gheja/ems-flasher
+sudo apt update
+sudo apt install ems-flasher
+```
+
+## Original about
 
 The EMS flasher is a simple command line flasher for the 64 Mbit EMS USB
 flash cart for Game Boy.
@@ -22,8 +38,7 @@ For more information, see the web site at:
 http://lacklustre.net/gb/ems/
 
 
-Prerequisites
--------------
+### Prerequisites
 
 To build ems-flasher pkg-config and lubusb is needed.
 
@@ -42,8 +57,7 @@ sudo apt-get install pkg-config libusb-1.0-0-dev
 ```
 
 
-Building
---------
+### Building
 
 Build is automated by a Makefile. To build simply run the following:
 
@@ -52,8 +66,7 @@ make
 ```
 
 
-Running
--------
+### Running
 
 The software has three major modes of operation:
   * write ROM to cart
@@ -81,8 +94,7 @@ by the Windows software).
 
 For a full list of options, run the command with the --help flag.
 
-Examples
---------
+### Examples
 
 ```
 # write the ROM to the cart
@@ -95,8 +107,7 @@ Examples
 ./ems-flasher --title
 ```
 
-Bugs
-----
+### Bugs
 
 The software only handles a single ROM in the first bank of the cart.
 Reading and writing of SRAM is not supported (yet). The commands to do
